@@ -664,6 +664,8 @@ body.light-theme{
 }
 
 .work__img{
+  height: 250px;
+  object-fit: cover;
   border-radius: 1rem;
   margin-bottom: .75rem;
 }
@@ -739,6 +741,7 @@ body.light-theme{
 /* Swiper class */
 
 .swiper {
+  max-width: 950px;
   width: 100%;
 }
 
