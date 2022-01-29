@@ -675,6 +675,7 @@ body.light-theme{
 }
 
 .work__button{
+  cursor: pointer;
   width: max-content;
   color: var(--first-color);
   font-size: var(--small-font-size);
@@ -692,6 +693,41 @@ body.light-theme{
   transition: .4s;
 }
 
+.work__modal{
+  position: fixed;
+  inset: 0;
+  background-color: hsla(var(--second-gue), 28%, 16%, .7);
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+  visibility: hidden; 
+  opacity: 0;
+  transition: .4s;
+  z-index: var(--z-modal);
+}
+
+.active__work-modal{
+  opacity: 1;
+  visibility: visible;
+}
+
+.work__modal-close{
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: var(--first-color);
+  cursor: pointer;
+  z-index: 10;
+  background: linear-gradient(180deg, 
+              hsla(var(--first-hue), var(--sat), var(--lig), 1),
+              hsla(var(--first-hue), var(--sat), var(--lig), .2)
+  );
+  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
+  color: var(--title-color);
+  border-radius: 50%;
+}
+
 /* Active item work*/
 
 .active-work{
@@ -702,6 +738,15 @@ body.light-theme{
 
 /* Swiper class */
 
+.swiper {
+  width: 100%;
+}
+
+
+.swiper-slide img{
+  display: block;
+  object-fit: cover;
+}
 
 /*=============== CONTACT ===============*/
 
@@ -916,6 +961,24 @@ body.light-theme{
   .work__filters{
     column-gap: .25rem;
   }
+
+  .work__modal{
+    top:30%
+  }
+  .swiper {
+    height: 320px;
+  }
+}
+
+/* in between */
+
+@media screen and (min-width: 320px){
+  .work__modal{
+    top:25%
+  }
+  .swiper{
+    height: 400px;
+  }
 }
 
 /* For medium devices */
@@ -967,6 +1030,10 @@ body.light-theme{
     width: 295px;
   }
 
+  .work__modal{
+    top:15%
+  }
+
   .contact__info{
     grid-template-columns: 300px;
     justify-content: center;
@@ -975,6 +1042,10 @@ body.light-theme{
   .contact__form{
     width: 360px;
     margin: 0 auto;
+  }
+
+  .swiper{
+    height: 576px;
   }
 }
 
@@ -988,6 +1059,13 @@ body.light-theme{
     justify-content: center;
     column-gap: 3rem;
   }
+  .work__modal{
+    top:5%
+  }
+  .swiper{
+    height: 767px;
+  }
+  
 }
 /* For large devices */
 
@@ -1088,7 +1166,12 @@ body.light-theme{
   .work__title{
     margin-bottom: .5rem;
   }
-
+  .work__modal{
+    top:1%
+  }
+  .swiper {
+    height: 900px;
+  }
   .contact__container{
     column-gap: 6rem;
   }

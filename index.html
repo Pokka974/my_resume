@@ -2,6 +2,7 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Julien de Fondaumière's resume with access to CV and portfolio as a junior full stack web developer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
@@ -11,7 +12,7 @@
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="./assets/css/styles.css">
@@ -66,7 +67,7 @@
                     <div class="home__data">
                         <span class="home__greeting">Hello, I'm</span>
                         <h1 class="home__name">Julien de Fondaumière</h1>
-                        <h3 class="home__education">Junior Web Developer</h3>
+                        <h2 class="home__education">Junior Web Developer</h2>
 
                         <div class="home__buttons">
                             <a download="" href="assets/pdf/CV_2022-01-19.pdf" class="button button--ghost">
@@ -77,14 +78,14 @@
                     </div>
 
                     <div class="home__handle">
-                        <img src="./assets/img/photo-pull-bleu-resized-min.png" alt="" class="home__img">
+                        <img src="./assets/img/photo-pull-bleu-resized-min.png" alt="main picture of julien in the home section" class="home__img">
                     </div>
 
                     <div class="home__social">
-                        <a href="https://bit.ly/3H4ulH3" target="_blank" class="home__social-link">
+                        <a href="https://bit.ly/3H4ulH3" target="_blank" rel="noopener" class="home__social-link">
                             <i class='bx bxl-linkedin-square' ></i>
                         </a>
-                        <a href="https://bit.ly/33Zr1yG" target="_blank" class="home__social-link">
+                        <a href="https://bit.ly/33Zr1yG" target="_blank" rel="noopener" class="home__social-link">
                             <i class='bx bxl-github' ></i>
                         </a>
                     </div>
@@ -102,7 +103,7 @@
                 <h2 class="section__title">About Me</h2>
 
                 <div class="about__container container grid">
-                    <img src="./assets/img/about-resized.jpg" alt="" class="about__img">
+                    <img src="./assets/img/about-resized.jpg" alt="second picture of julien in the about section" class="about__img">
 
                     <div class="about__data">
                         <div class="about__info">
@@ -406,20 +407,32 @@
 
                 <div class="work__filters">
                     <span class="work__item active-work" data-filter='all'>All</span>
-                    <span class="work__item" data-filter='.web'>Web</span>
-                    <span class="work__item" data-filter='.movil'>Movil</span>
-                    <span class="work__item" data-filter='.design'>Design</span>
+                    <span class="work__item" data-filter='.web'>Personal</span>
+                    <span class="work__item" data-filter='.courses'>Courses</span>
+                    <span class="work__item" data-filter='.design'>Mission</span>
                 </div>
 
                 <div class="work__container container grid">
-                    <div class="work__card mix web">
-                        <img src="./assets/img/work1.jpg" alt="" class="work__img">
+                    <div class="work__card mix courses">
+                        <img src="./assets/img/work-img/booki_gif1.gif" alt="" class="work__img">
 
-                        <h3 class="work__title">Web design</h3>
+                        <h3 class="work__title">Responsive Booking Website</h3>
 
-                        <a href="#" class="work__button">
+                        <span class="work__button">
                             Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </a>
+                        </span>
+
+                        <div class="work__modal swiper">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <div class="work__modal-content swiper-wrapper">
+                                <img class="swiper-slide" src="./assets/img/work-img/booki_gif1-big.gif" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/booki1.png" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/booki2.png" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/booki_gif2.gif" alt="">
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
 
                     <div class="work__card mix movil">
@@ -494,7 +507,7 @@
                                 <h3 class="contact__card-title">Whatsapp</h3>
                                 <span class="contact__card-data">+33 6 50 52 05 44</span>
 
-                                <a href="https://wa.link/7mwvsx" target="_blank" class="contact__button">
+                                <a href="https://wa.link/7mwvsx" target="_blank" rel="noopener" class="contact__button">
                                     Write me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
                                 </a>
                             </div>
@@ -543,11 +556,11 @@
                 </ul>
 
                 <ul class="footer__social">
-                    <a href="https://www.facebook.com/julien.defondaumiere.71/" target="_blank" class="footer__social-link">
+                    <a href="https://www.facebook.com/julien.defondaumiere.71/" rel="noopener" target="_blank" class="footer__social-link">
                         <i class='bx bxl-facebook' ></i>
                     </a>
 
-                    <a href="https://www.instagram.com/pokka_neiluj/" target="_blank" class="footer__social-link">
+                    <a href="https://www.instagram.com/pokka_neiluj/" rel="noopener" target="_blank" class="footer__social-link">
                         <i class='bx bxl-instagram' ></i>
                     </a>
                 </ul>
@@ -561,6 +574,8 @@
         <!--=============== SCROLLREVEAL ===============-->
         <script src="./assets/js/scrollreveal.min.js"></script>
 
+        <!--=============== SWIPER JS ===============-->
+        <script src="./assets/js/swiper-bundle.min.js"></script>
         <!--=============== MIXITUP FILTER ===============-->
         <script src="./assets/js/mixitup.min.js"></script>
 

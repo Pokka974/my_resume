@@ -31,6 +31,30 @@ modalClose.forEach((mc) => {
     });
 });
 
+/*=============== WORK MODAL ===============*/
+
+const workViews = document.querySelectorAll('.work__modal'),
+    workBtns = document.querySelectorAll('.work__button'),
+    workClose = document.querySelectorAll('.work__modal-close');
+
+let modalWork = function(modalClick){
+    workViews[modalClick].classList.add('active__work-modal');
+}
+
+workBtns.forEach((mb, i) => {
+    mb.addEventListener('click', () => {
+        modalWork(i);
+    });
+});
+
+workClose.forEach((mc) => {
+    mc.addEventListener('click', () => {
+        workViews.forEach((mv) => {
+            mv.classList.remove('active__work-modal');
+        });
+    });
+});
+
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
 let mixerPortfolio = mixitup('.work__container', {
@@ -51,9 +75,19 @@ function activeWork(){
 }
 
 linkWork.forEach(l => l.addEventListener('click', activeWork));
-/*=============== SWIPER TESTIMONIAL ===============*/
 
+/*=============== SWIPER WORK ===============*/
 
+let swiperWork = new Swiper(".work__modal", {
+    spaceBetween: 24,
+    loop: true,
+    grapCursor: true,
+    
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+});
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 const sections = document.querySelectorAll('section[id]');
