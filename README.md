@@ -1,9 +1,9 @@
 # my_resume
 My responsive online resume in full HTML/CSS + JS.
 
-Using basing HTML/CSS/JS
+Using basic HTML/CSS/JS
 
-+ library: Scroll Reveal, Mixitup Filter, Swiper JS, Boxicons
+Library: Scroll Reveal, Mixitup Filter, Swiper JS, Boxicons
 
 The design comes from one of the great /bedimcode templates.
 
