@@ -974,6 +974,9 @@ body.light-theme{
   }
 }
 
+.swiper-slide{
+  object-fit: cover;
+}
 /* in between */
 
 @media screen and (min-width: 320px){
