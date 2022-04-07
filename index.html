@@ -34,7 +34,7 @@
                                 <i class='bx bx-home-alt'></i>
                             </a>
                         </li>
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <a href="#about" class="nav__link">
                                 <i class='bx bx-user' ></i>
                             </a>
@@ -43,7 +43,7 @@
                             <a href="#skills" class="nav__link">
                                 <i class='bx bx-book' ></i>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav__item">
                             <a href="#work" class="nav__link">
                                 <i class='bx bx-briefcase-alt-2' ></i>
@@ -75,7 +75,7 @@
                             <a download="" href="assets/pdf/CV_2022.pdf" class="button button--ghost">
                                 Download CV
                             </a>
-                            <a href="#about" class="button">About me</a>
+                            <!-- <a href="#about" class="button">About me</a> -->
                         </div>
                     </div>
 
@@ -100,7 +100,7 @@
             </section>
             
             <!--=============== ABOUT ===============-->
-            <section class="about section" id="about">
+            <!-- <section class="about section" id="about">
                 <span class="section__subtitle">My Intro</span>
                 <h2 class="section__title">About Me</h2>
 
@@ -136,8 +136,147 @@
                         <a href="#contact" class="button">Contact Me</a>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!--  -->
+
+            <!--=============== WORK ===============-->
+            <section class="work section" id="work">
+                <span class="section__subtitle">My Portfolio</span>
+                <h2 class="section__title">Recent Works</h2>
+
+                <div class="work__filters">
+                    <span class="work__item active-work" data-filter='all'>All</span>
+                    <span class="work__item" data-filter='.personal'>Personal</span>
+                    <span class="work__item" data-filter='.courses'>Courses</span>
+                    <!-- <span class="work__item" data-filter='.design'>Mission</span> -->
+                </div>
+
+                <div class="work__container container grid">
+                    <div class="work__card mix personal">
+                        <img src="./assets/img/work-img/medium-1.png" alt="" class="work__img">
+
+                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://sanity-blog-medium.vercel.app/">Medium Clone with<br/> NextJS and Sanity</a></h3>
+
+                        <span class="work__button">
+                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </span>
+
+                        <div class="work__modal swiper">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <div class="work__modal-content swiper-wrapper">
+                                <img class="swiper-slide" src="./assets/img/work-img/medium-1.png" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/medium-2.png" alt="">
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="work__card mix courses">
+                        <img src="./assets/img/work-img/booki_gif1.gif" alt="" class="work__img">
+
+                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://pokka974.github.io/OC-P2/">Responsive Booking Website</a></h3>
+
+                        <span class="work__button">
+                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </span>
+
+                        <div class="work__modal swiper">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <div class="work__modal-content swiper-wrapper">
+                                <img class="swiper-slide" src="./assets/img/work-img/booki_gif1-big.gif" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/booki1.png" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/booki2.png" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/booki_gif2.gif" alt="">
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix courses">
+                        <img src="./assets/img/work-img/omf_gif2.gif" alt="" class="work__img">
+
+                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://pokka974.github.io/OC-P3/">Responsive / Full CSS Animation <br>Using Sass</a></h3>
+
+                        <span class="work__button">
+                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </span>
+
+                        <div class="work__modal swiper">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <div class="work__modal-content swiper-wrapper">
+                                <img class="swiper-slide" src="./assets/img/work-img/omf_gif2.gif" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/omf1.png" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/omf_gif3.gif" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/omf_gif4.gif" alt="">
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix courses">
+                        <img src="./assets/img/work-img/kanap_gif1.gif" alt="" class="work__img">
+
+                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://github.com/Pokka974/OC-P5">E-Commerce site <br>Using JS and API</a></h3>
+
+                        <span class="work__button">
+                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </span>
+
+                        <div class="work__modal swiper">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <div class="work__modal-content swiper-wrapper">
+                                <img class="swiper-slide" src="./assets/img/work-img/kanap1.png" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/kanap2.png" alt="">
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix courses">
+                        <img src="./assets/img/work-img/piquante.gif" alt="" class="work__img">
+
+                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://github.com/Pokka974/OC-P6">Hot Sauce Review <br>Using Mongoose and API REST</a></h3>
+
+                        <span class="work__button">
+                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </span>
+
+                        <div class="work__modal swiper">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <div class="work__modal-content swiper-wrapper">
+                                <img class="swiper-slide" src="./assets/img/work-img/piquante1.gif" alt="">
+                                <img class="swiper-slide" src="./assets/img/work-img/piquante_gif2.gif" alt="">
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix courses">
+                        <img src="./assets/img/work-img/groupomania.gif" alt="" class="work__img">
+
+                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://github.com/Pokka974/OC_P7">Social network <br>Using React Sequelize TailwindCSS</a></h3>
+
+                        <span class="work__button">
+                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </span>
+
+                        <div class="work__modal swiper">
+                            <i class='bx bx-x work__modal-close'></i>
+                            <div class="work__modal-content swiper-wrapper">
+                                <img class="swiper-slide" src="./assets/img/work-img/groupomania.gif" alt="">
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
             <!--=============== SKILLS ===============-->
             <section class="skills section" id="skills">
                 <span class="section__subtitle">My abilities</span>
@@ -227,7 +366,7 @@
             </section>
 
             <!--=============== SERVICES ===============-->
-            <section class="services section">
+            <!-- <section class="services section">
                 <span class="section__subtitle">My Services</span>
                 <h2 class="section__title">What I Offer</h2>
 
@@ -387,126 +526,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            <!--=============== WORK ===============-->
-            <section class="work section" id="work">
-                <span class="section__subtitle">My Portfolio</span>
-                <h2 class="section__title">Recent Works</h2>
-
-                <div class="work__filters">
-                    <span class="work__item active-work" data-filter='all'>All</span>
-                    <span class="work__item" data-filter='.web'>Personal</span>
-                    <span class="work__item" data-filter='.courses'>Courses</span>
-                    <span class="work__item" data-filter='.design'>Mission</span>
-                </div>
-
-                <div class="work__container container grid">
-                    <div class="work__card mix courses">
-                        <img src="./assets/img/work-img/booki_gif1.gif" alt="" class="work__img">
-
-                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://pokka974.github.io/OC-P2/">Responsive Booking Website</a></h3>
-
-                        <span class="work__button">
-                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </span>
-
-                        <div class="work__modal swiper">
-                            <i class='bx bx-x work__modal-close'></i>
-                            <div class="work__modal-content swiper-wrapper">
-                                <img class="swiper-slide" src="./assets/img/work-img/booki_gif1-big.gif" alt="">
-                                <img class="swiper-slide" src="./assets/img/work-img/booki1.png" alt="">
-                                <img class="swiper-slide" src="./assets/img/work-img/booki2.png" alt="">
-                                <img class="swiper-slide" src="./assets/img/work-img/booki_gif2.gif" alt="">
-                            </div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-
-                    <div class="work__card mix courses">
-                        <img src="./assets/img/work-img/omf_gif2.gif" alt="" class="work__img">
-
-                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://pokka974.github.io/OC-P3/">Responsive / Full CSS Animation <br>Using Sass</a></h3>
-
-                        <span class="work__button">
-                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </span>
-
-                        <div class="work__modal swiper">
-                            <i class='bx bx-x work__modal-close'></i>
-                            <div class="work__modal-content swiper-wrapper">
-                                <img class="swiper-slide" src="./assets/img/work-img/omf_gif2.gif" alt="">
-                                <img class="swiper-slide" src="./assets/img/work-img/omf1.png" alt="">
-                                <img class="swiper-slide" src="./assets/img/work-img/omf_gif3.gif" alt="">
-                                <img class="swiper-slide" src="./assets/img/work-img/omf_gif4.gif" alt="">
-                            </div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-
-                    <div class="work__card mix courses">
-                        <img src="./assets/img/work-img/kanap_gif1.gif" alt="" class="work__img">
-
-                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://github.com/Pokka974/OC-P5">E-Commerce site <br>Using JS and API</a></h3>
-
-                        <span class="work__button">
-                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </span>
-
-                        <div class="work__modal swiper">
-                            <i class='bx bx-x work__modal-close'></i>
-                            <div class="work__modal-content swiper-wrapper">
-                                <img class="swiper-slide" src="./assets/img/work-img/kanap1.png" alt="">
-                                <img class="swiper-slide" src="./assets/img/work-img/kanap2.png" alt="">
-                            </div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-
-                    <div class="work__card mix courses">
-                        <img src="./assets/img/work-img/piquante.gif" alt="" class="work__img">
-
-                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://github.com/Pokka974/OC-P6">Hot Sauce Review <br>Using Mongoose and API REST</a></h3>
-
-                        <span class="work__button">
-                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </span>
-
-                        <div class="work__modal swiper">
-                            <i class='bx bx-x work__modal-close'></i>
-                            <div class="work__modal-content swiper-wrapper">
-                                <img class="swiper-slide" src="./assets/img/work-img/piquante1.gif" alt="">
-                                <img class="swiper-slide" src="./assets/img/work-img/piquante_gif2.gif" alt="">
-                            </div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-
-                    <div class="work__card mix courses">
-                        <img src="./assets/img/work-img/groupomania.gif" alt="" class="work__img">
-
-                        <h3 class="work__title"><a target="_blank" rel="noopener" href="https://github.com/Pokka974/OC_P7">Social network <br>Using React Sequelize TailwindCSS</a></h3>
-
-                        <span class="work__button">
-                            Demo    <i class='bx bx-right-arrow-alt work__icon' ></i>
-                        </span>
-
-                        <div class="work__modal swiper">
-                            <i class='bx bx-x work__modal-close'></i>
-                            <div class="work__modal-content swiper-wrapper">
-                                <img class="swiper-slide" src="./assets/img/work-img/groupomania.gif" alt="">
-                            </div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+            
 
             <!--=============== TESTIMONIALS ===============-->
             <!-- <section class="testimonial section">

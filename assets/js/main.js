@@ -93,13 +93,20 @@ let swiperWork = new Swiper(".work__modal", {
 const sections = document.querySelectorAll('section[id]');
 
 function scrollActive(){
-    const scrollY = window.scrollY;
+    const scrollY = window./* `scrollY` is a variable that is used to determine the current scroll
+    position of the user. */
+    scrollY;
 
     sections.forEach(current => {
-        const sectionHeight = current.offsetHeight,
-            sectionTop = current.offsetTop - 58,
+        console.log('scrollY', scrollY);
+        
+        const sectionHeight = current./* The height of the element. */
+        offsetHeight,
+            sectionTop = current./* The distance from the top of the page to the top of the element. */
+            offsetTop - 58,
             sectionId = current.getAttribute('id');
-
+            console.log('1', scrollY > sectionTop);
+            console.log('2', scrollY <= sectionTop + sectionHeight);
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
         }else{

@@ -746,12 +746,14 @@ body.light-theme{
   width: 100%;
 }
 
-
 .swiper-slide img{
   display: block;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
+.swiper-slide{
+  object-fit: contain;
+}
 /*=============== CONTACT ===============*/
 
 .contact__container{
@@ -974,9 +976,7 @@ body.light-theme{
   }
 }
 
-.swiper-slide{
-  object-fit: cover;
-}
+
 /* in between */
 
 @media screen and (min-width: 320px){
@@ -1076,7 +1076,7 @@ body.light-theme{
 }
 /* For large devices */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1100px) {
     
   .container{
       margin-left: auto;
@@ -1160,6 +1160,7 @@ body.light-theme{
 
   .work__container{
     gap: 3rem;
+    grid-template-columns: repeat(3, max-content);
   }
 
   .work__card{
@@ -1187,5 +1188,11 @@ body.light-theme{
     font-size: 1.25rem;
     padding: .4rem;
     border-radius: .5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .work__container{
+    grid-template-columns: repeat(4, max-content);
   }
 }
