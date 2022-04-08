@@ -427,6 +427,7 @@ body.light-theme{
   align-items: flex-end;
   justify-content: center;
   overflow: hidden;
+  margin-top: 2rem;
 }
 
 .home__buttons{
@@ -1229,7 +1230,7 @@ body.light-theme{
   } */
 
   .section{
-    padding: 6.5rem 0 1rem;
+    padding: 4rem 0 1rem;
   }
   
   .section__title{
