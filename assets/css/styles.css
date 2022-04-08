@@ -193,11 +193,17 @@ body.light-theme{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+@media screen and (max-width:1440px) {
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 .grid {
   display: grid;
   gap: 1.25rem;
@@ -1217,10 +1223,10 @@ body.light-theme{
   .home__description-subtitle{
     font-size: 1.2rem;
   }
-  .container{
+  /* .container{
       margin-left: auto;
       margin-right: auto;
-  }
+  } */
 
   .section{
     padding: 6.5rem 0 1rem;
