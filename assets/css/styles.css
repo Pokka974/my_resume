@@ -282,10 +282,15 @@ body.light-theme{
 .nav__link{
   color: var(--text-color);
   font-size: 1.25rem;
-  padding: .4rem;
   display: flex;
   border-radius: 5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 /* Active link */
 

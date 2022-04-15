@@ -91,31 +91,29 @@ let swiperWork = new Swiper(".work__modal", {
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 const sections = document.querySelectorAll('section[id]');
+const navLi = document.querySelectorAll('nav ul li')
 
-function scrollActive(){
-    const scrollY = window./* `scrollY` is a variable that is used to determine the current scroll
-    position of the user. */
-    scrollY;
+window.addEventListener('scroll', () => {
+    let current = ''
 
-    sections.forEach(current => {
-        console.log('scrollY', scrollY);
-        
-        const sectionHeight = current./* The height of the element. */
-        offsetHeight,
-            sectionTop = current./* The distance from the top of the page to the top of the element. */
-            offsetTop - 58,
-            sectionId = current.getAttribute('id');
-            console.log('1', scrollY > sectionTop);
-            console.log('2', scrollY <= sectionTop + sectionHeight);
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop
+        const sectionHeight = section.clientHeight
+
+        if(pageYOffset >= sectionTop){
+            current = section.getAttribute('id')
+            console.log(current);
         }
-    });
-}
+    })
 
-window.addEventListener('scroll', scrollActive);
+    navLi.forEach(li => {
+        li.classList.remove('active-link')
+
+        if(li.classList.contains(current)){
+            li.classList.add('active-link')
+        }
+    })
+});
 
 /*=============== LIGHT DARK THEME ===============*/ 
 
